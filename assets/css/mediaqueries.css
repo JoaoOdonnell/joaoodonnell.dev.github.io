@@ -44,7 +44,7 @@
     font-size: 3em;
   }
   .apresentacao button {
-    margin-top: 5em;
+    margin-top: 4em;
     width: 200px;
   }
   .apresentacao button a {
@@ -271,5 +271,39 @@
   }
   .logo-Java {
     height: 12em;
+  }
+
+  .header-projetos h1 {
+    font-size: 3rem;
+  }
+
+  .grid-projetos {
+    grid-template-columns: 1fr;
+    padding: 0 10rem;
+    gap: 1rem;
+  }
+  .grid-projetos figure p {
+    padding: 1rem;
+    width: 12rem;
+  }
+
+  .grid-projetos .ultima-figura {
+    display: none;
+  }
+
+  .footer-projetos {
+    padding-top: 1rem;
+  }
+
+  .middle-content-contato {
+    font-size: 0.7rem;
+  }
+
+  .form-contato {
+    width: 30em;
+  }
+
+  form .form-contato input {
+    width: 100%;
   }
 }
