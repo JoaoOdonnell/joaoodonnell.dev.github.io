@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   #cabecalho {
     justify-content: space-around;
   }
@@ -122,6 +122,10 @@
     text-align: center;
   }
 
+  .footer-home img {
+    height: 2.5em;
+  }
+
   #menu #list-pages {
     display: block;
     position: absolute;
@@ -138,12 +142,14 @@
   }
 
   #menu.active #list-pages {
+    padding-top: 3em;
     height: calc(100vh - 70px);
     visibility: visible;
   }
 
   #menu ul li {
     border-right: none;
+    padding-top: 0.5em;
   }
 
   #menu ul li a {
@@ -200,5 +206,70 @@
   #menu.active #hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
+  }
+
+  #container-sobre-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-content-sobre {
+    padding-left: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .middle-content-sobre h1 {
+    font-size: 3em;
+    padding-left: 0;
+  }
+
+  .middle-content-sobre .paragrafo {
+    padding-left: 0;
+    font-size: 1em;
+    grid-row-start: 2;
+  }
+
+  .middle-content-sobre .paragrafo p {
+    width: 25em;
+  }
+
+  .middle-content-sobre figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 3;
+  }
+
+  .middle-content-sobre figure img {
+    width: 18em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5em;
+  }
+
+  .grid-1,
+  .grid-softskills {
+    font-size: 0.5rem;
+  }
+
+  .grid-figures {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .js-logo {
+    padding-top: 1em;
+  }
+
+  .logo-Git,
+  .Logo-gitHub {
+    height: 12em;
+  }
+  .logo-Java {
+    height: 12em;
   }
 }
