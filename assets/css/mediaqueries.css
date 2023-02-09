@@ -112,6 +112,7 @@
   }
 
   .apresentacao {
+    margin-top: 5em;
     font-size: 0.75rem;
   }
 
@@ -119,10 +120,6 @@
     justify-content: space-around;
     width: 100%;
     text-align: center;
-  }
-
-  .footer-home img {
-    height: 2.5em;
   }
 
   #menu #list-pages {
@@ -149,6 +146,10 @@
     border-right: none;
   }
 
+  #menu ul li a {
+    font-size: 30px;
+  }
+
   #menu li:last-child {
     margin-right: 0;
   }
@@ -170,8 +171,34 @@
   }
 
   #hamburguer {
+    margin-top: 5px;
     border-top: 2px solid;
     width: 20px;
     color: #ffff;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    margin-top: 5px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #menu.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #menu.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #menu.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
