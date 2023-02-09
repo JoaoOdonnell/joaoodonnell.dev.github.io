@@ -112,7 +112,6 @@
   }
 
   .apresentacao {
-    margin-top: 10em;
     font-size: 0.75rem;
   }
 
@@ -120,6 +119,10 @@
     justify-content: space-around;
     width: 100%;
     text-align: center;
+  }
+
+  .footer-home img {
+    height: 2.5em;
   }
 
   #menu #list-pages {
