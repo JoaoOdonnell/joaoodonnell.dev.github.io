@@ -3,7 +3,7 @@
 
 #container-projetos-page {
   background: var(--second-bg-color);
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   overflow-y: hidden;
 }

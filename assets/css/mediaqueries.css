@@ -228,10 +228,11 @@
     padding-left: 0;
     font-size: 1em;
     grid-row-start: 2;
+    max-width: 100%;
   }
 
   .middle-content-sobre .paragrafo p {
-    width: 25em;
+    width: 80%;
   }
 
   .middle-content-sobre figure {
