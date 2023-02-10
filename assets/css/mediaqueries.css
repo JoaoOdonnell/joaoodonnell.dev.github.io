@@ -216,11 +216,12 @@
   .middle-content-sobre {
     padding-left: 0;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 12em 1fr 1fr;
   }
 
   .middle-content-sobre h1 {
     font-size: 3em;
+
     padding-left: 0;
   }
 
