@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
 
 #container-contato-page {
-  background: var(--main-bg-color);
   height: 100vh;
   max-width: 100%;
 }

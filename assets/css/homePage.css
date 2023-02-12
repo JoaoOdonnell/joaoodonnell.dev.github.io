@@ -12,8 +12,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-#container-home-page {
+body {
   background: var(--main-bg-color);
+  background-attachment: fixed;
+}
+
+#container-home-page {
   height: 100vh;
   max-width: 100%;
   overflow-y: hidden;

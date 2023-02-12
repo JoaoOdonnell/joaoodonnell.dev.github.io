@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
 
 #container-sobre-page {
-  background: var(--second-bg-color);
   height: 100vh;
   width: 100%;
   overflow-y: hidden;
