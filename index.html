@@ -11,33 +11,32 @@
   <link rel="stylesheet" href="assets/css/skillsPage.css">
   <link rel="stylesheet" href="assets/css/projetosPage.css">
   <link rel="stylesheet" href="assets/css/contatoPage.css">
-  <link rel="stylesheet" href="assets/css/mediaqueries.css">
+  <!-- <link rel="stylesheet" href="assets/css/mediaqueries.css"> -->
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
+  <header id="cabecalho">
+    <div class="logo">
+      <a href="#container-home-page">
+        <figure>
+          <img src="assets/img/LogoJT.svg" alt="logo-Joao">
+        </figure>
+      </a>
+    </div>
+    <nav id="menu">
+      <button id="btn-mobile">Menu <span id="hamburguer"></span></button>
+      <ul id="list-pages">
+        <li><a href="#container-home-page">Início</a></li>
+        <li><a href="#container-sobre-page">Sobre</a></li>
+        <li><a href="#container-skills-page">Skills</a></li>
+        <li><a href="#container-projetos-page">Projetos</a></li>
+        <li><a href="#container-contato-page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
   <!-- PÁGINA INICIAL -->
   <section id="container-home-page">
-    <header id="cabecalho">
-      <div class="logo">
-        <a href="#container-home-page">
-          <figure>
-            <img src="assets/img/LogoJT.svg" alt="logo-Joao">
-          </figure>
-        </a>
-      </div>
-
-      <nav id="menu">
-        <button id="btn-mobile">Menu <span id="hamburguer"></span></button>
-        <ul id="list-pages">
-          <li><a href="#container-home-page">Início</a></li>
-          <li><a href="#container-sobre-page">Sobre</a></li>
-          <li><a href="#container-skills-page">Skills</a></li>
-          <li><a href="#container-projetos-page">Projetos</a></li>
-          <li><a href="#container-contato-page">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
     <div class="middle-content-home">
       <div class="apresentacao">
         <h2>Olá! Eu sou</h2>
@@ -48,18 +47,15 @@
             target="_blank">Currículo</a></button>
       </div>
 
-      <div class="logo-principal slide-right">
-        <figure>
-          <img src="assets/img/LogoJT.svg" alt="logo-Joao">
-        </figure>
-      </div>
+      <figure>
+        <img class="logo-apresentacao" src="assets/img/LogoJT.svg" alt="logo-Joao">
+      </figure>
     </div>
 
     <footer class="footer-home slide-top">
       <div class="figura">
         <figure>
           <a target="_blank" href="https://github.com/JoaoOdonnell"><img src="assets/img/GitHub.svg" alt="link-github">
-
           </a>
       </div>
       </figure>
