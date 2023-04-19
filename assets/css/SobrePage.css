@@ -2,41 +2,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
 
 #container-sobre-page {
-  height: 100vh;
-  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   overflow-y: hidden;
 }
 
 .middle-content-sobre {
-  width: 100%;
-  padding-left: 6em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  justify-items: center;
+  margin-top: 15rem;
+  padding: 40px;
 }
 
-.middle-content-sobre h1 {
-  display: flex;
-  justify-content: center;
-  padding-top: 3em;
-  padding-left: 1em;
-  font-size: 4em;
-  color: #ffff;
-  padding-bottom: 0.2em;
+.subtitulo-sobre {
+  font-size: 6rem;
+  color: #306161;
+  line-height: 1.3;
+  position: relative;
 }
 
-.middle-content-sobre .paragrafo {
-  padding-left: 2em;
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-  color: #ffff;
-  text-align: justify;
-}
-
-.middle-content-sobre .paragrafo p {
-  width: 50%;
-}
-
-.middle-content-sobre figure img {
+.subtitulo-sobre::before {
+  content: "";
   position: absolute;
-  display: flex;
-  width: 22%;
+  width: 100px;
+  height: 150px;
+  top: -25px;
+  left: -25px;
+  z-index: -10;
+  background: url(/assets/img/detalhe.svg) no-repeat center;
+}
+
+.subtitulo-sobre::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  bottom: -30px;
+  right: 70px;
+  z-index: -10;
+  background: url(/assets/img/detalhe.svg) no-repeat center;
+}
+
+.paragrafo {
+  font-size: 1.125rem;
+  color: #ffffff;
+  line-height: 1.5;
 }

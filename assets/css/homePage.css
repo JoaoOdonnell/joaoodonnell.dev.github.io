@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Fira Sans", "poppins", sans-serif;
 }
 
 body {
@@ -76,6 +76,7 @@ header nav h2 a {
   cursor: pointer;
   bottom: 0.1em;
   position: absolute;
+  top: 25px;
   left: 50%;
   width: 0;
   height: 0.2rem;
@@ -176,7 +177,6 @@ header nav h2 a {
 }
 
 .apresentacao button a {
-  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #ffff;
   font-size: 40px;
@@ -202,7 +202,7 @@ header nav h2 a {
   animation: animacaoY 2s infinite alternate both;
 }
 
-footer {
+#container-home-page footer {
   display: flex;
   flex-wrap: wrap;
   max-width: 1300px;
@@ -238,4 +238,43 @@ footer {
 
 #btn-mobile {
   display: none;
+}
+
+@media (max-width: 850px) {
+  #cabecalho {
+    justify-content: space-around;
+  }
+
+  .apresentacao h2,
+  h3 {
+    font-size: 1rem;
+  }
+
+  .apresentacao h1 {
+    font-size: 2rem;
+  }
+
+  .apresentacao button {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .apresentacao button a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .middle-content-home {
+    grid-template-columns: 1fr;
+    margin-top: 15rem;
+  }
+
+  .logo-apresentacao {
+    display: none;
+  }
+
+  #container-home-page footer {
+    gap: 3rem;
+  }
 }
