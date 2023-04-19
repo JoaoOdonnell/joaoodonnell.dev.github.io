@@ -2,19 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
 
 #container-sobre-page {
-  max-width: 1300px;
-  margin: 0 auto;
-  overflow-y: hidden;
 }
 
 .middle-content-sobre {
+  margin: 0 auto;
+  max-width: 1300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
-  align-items: center;
   justify-items: center;
-  margin-top: 15rem;
-  padding: 40px;
+  padding: 15rem 4rem 10rem 4rem;
 }
 
 .subtitulo-sobre {
@@ -50,4 +47,21 @@
   font-size: 1.125rem;
   color: #ffffff;
   line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .subtitulo-sobre::after {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .middle-content-sobre {
+    grid-template-columns: 1fr;
+    margin-top: 10rem;
+  }
+
+  .subtitulo-sobre {
+    text-align: center;
+  }
 }

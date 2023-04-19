@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="assets/css/SobrePage.css">
   <link rel="stylesheet" href="assets/css/skillsPage.css">
   <link rel="stylesheet" href="assets/css/projetosPage.css">
-  <link rel="stylesheet" href="assets/css/contatoPage.css">
-  <!-- <link rel="stylesheet" href="assets/css/mediaqueries.css"> -->
   <link rel="stylesheet" href="assets/css/menuHamburguer.css">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
@@ -32,7 +30,6 @@
         <li><a href="#container-sobre-page">Sobre</a></li>
         <li><a href="#container-skills-page">Skills</a></li>
         <li><a href="#container-projetos-page">Projetos</a></li>
-        <li><a href="#container-contato-page">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -117,50 +114,24 @@
 
   <!-- PÁGINA SKILLS -->
   <section id="container-skills-page">
-    <div class="grid">
-      <div class="grid-1 slide-top">
-        <h1>hard skills</h1>
-        <div class="grid-figures">
-          <figure class="js-logo">
-            <img src="assets/img/Logo JS.svg" alt="Javascript-logo">
-            <br>
-            <b class="textJ">JavaScript</b>
-          </figure>
-          <figure>
-            <img src="assets/img/Logo HMTL.svg" alt="htlm3-logo">
-            <br>
-            <b>HTML3</b>
-          </figure>
-          <figure>
-            <img src="assets/img/Logo CSS.svg" alt="CSS3-logo">
-            <br>
-            <b>CSS3</b>
-          </figure>
-          <figure>
-            <img class="logo-Java" src="assets/img/Logo Java.svg" alt="java-logo">
-            <br>
-            <b>Java</b>
-          </figure>
+    <div class="middle-content-skills">
+      <div>
+        <h1 class="titulo">hard skills</h1>
 
-          <figure>
-            <img src="assets/img/Git.svg" alt="Git-logo" class="logo-Git">
-            <br>
-            <b>Git</b>
-          </figure>
-
-          <figure>
-            <img src="assets/img/Logo-GitHub.svg" alt="logo-gitHub" class="Logo-gitHub">
-            <br>
-            <b>GitHub</b>
-          </figure>
+        <div class="logo-hard-skills">
+          <img class="img-hardskills" src="/assets/img/javascript-logo.svg" alt="logo JavaScript">
+          <img class="img-hardskills" src="/assets/img/html-logo.svg" alt="logo HTML">
+          <img class="img-hardskills" src="/assets/img/css-logo.svg" alt="Logo CSS">
+          <img class="img-hardskills" src="/assets/img/git-logo.svg" alt="Logo Git">
+          <img class="img-hardskills" src="/assets/img/Github-logo.svg" alt="Logo GitHub">
+          <img class="img-hardskills" src="/assets/img/figma-logo.svg" alt="Logo Figma">
         </div>
       </div>
 
       <div class="grid-softskills slide-bottom">
-        <div class="grid-h1-softskills">
-          <h1>Soft Skills</h1>
-        </div>
-        <div class="grid-adjetivos">
+        <h1 class="titulo">Soft Skills</h1>
+
+        <div class="adjetivos-skills">
           <h2 class="slide-left">Trabalho em equipe</h2>
           <h2 class="slide-right">Comunicação</h2>
           <h2 class="slide-left">Inteligência emocional</h2>
@@ -173,55 +144,27 @@
 
   <!-- PÁGINA PROJETOS -->
   <section id="container-projetos-page">
-
-    <div class="slide-top">
-      <div class="header-projetos">
-        <h1>projetos</h1>
+    <div class="middle-content-projeto slide-top">
+      <h1 class="titulo">projetos</h1>
+      <div>
+        <ul class="grid-projetos">
+          <li><a href="#"><img class="img-projetos" src="/assets/img/Miniatura Projeto.svg"
+                alt="projetos miniatura"></a></li>
+          <li><a href="#"><img class="img-projetos" src="/assets/img/Miniatura Projeto.svg"
+                alt="projetos miniatura"></a></li>
+          <li><a href="#"><img class="img-projetos" src="/assets/img/Miniatura Projeto.svg"
+                alt="projetos miniatura"></a></li>
+        </ul>
       </div>
-
-      <div class="grid-projetos">
-        <figure>
-          <img src="assets/img/construction.svg" alt="construction-image">
-          <p>Em Breve</p>
-        </figure>
-
-        <figure>
-          <img src="assets/img/construction.svg" alt="construction-image">
-          <p>Em Breve</p>
-        </figure>
-
-        <figure class="ultima-figura">
-          <img src="assets/img/construction.svg" alt="construction-image">
-          <p>Em Breve</p>
-        </figure>
+    </div>
+    <footer class="footer-projetos">
+      <div class="mostrar-mais">
+        <div>
+          <button id="btnMostrar" onclick="mostrarMais()">Ver mais</button>
+        </div><span id="vazio"></span>
       </div>
-
-      <footer class="footer-projetos">
-        <div class="mostrar-mais">
-          <div>
-            <button id="btnMostrar" onclick="mostrarMais()">Ver mais</button>
-          </div><span id="vazio"></span>
-        </div>
-        <a target="_blank" href="https://github.com/JoaoOdonnell" id="linkGit">Repositório GitHub</a>
-      </footer>
-    </div>
-  </section>
-
-  <!-- PÁGINA CONTATO -->
-  <section id="container-contato-page">
-    <div class="middle-content-contato slide-top">
-      <h1>CONTATO</h1>
-      <form action="https://formsubmit.co/talaiajoao211@gmail.com" method="POST">
-        <div class="form-contato">
-          <input type="text" name="nome" placeholder="Nome">
-          <input type="email" name="email" placeholder="E-mail">
-          <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-          <input class="btn-contato" type="submit" value="ENVIAR">
-          <input type="hidden" name="_captcha" value="false">
-        </div>
-      </form>
-
-    </div>
+      <a target="_blank" href="https://github.com/JoaoOdonnell" id="linkGit">Repositório GitHub</a>
+    </footer>
   </section>
 
   <script src="assets/js/script.js"></script>
