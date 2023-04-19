@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
 :root {
   --main-bg-color: linear-gradient(180deg, #000000 0%, #0d7676 100%);
@@ -174,6 +175,7 @@ header figure img {
 }
 
 .apresentacao button a {
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #ffff;
   font-size: 40px;
