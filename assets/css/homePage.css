@@ -198,7 +198,7 @@ header figure img {
   }
 }
 
-.logo-principal {
+.logo-apresentacao {
   animation: animacaoY 2s infinite alternate both;
 }
 
@@ -208,7 +208,7 @@ header figure img {
   max-width: 1300px;
   gap: 5rem;
   margin: 0 auto;
-  padding: 0 2.5rem 4rem 0;
+  padding: 0 2.5rem 4rem 4rem;
 }
 
 .figura img {
