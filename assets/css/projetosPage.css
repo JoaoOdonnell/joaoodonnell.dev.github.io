@@ -74,11 +74,12 @@
   color: rgba(255, 255, 255, 0.75);
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  transition: 0.5s;
 }
 
 #btnMostrar:hover {
   cursor: pointer;
-  background-color: #195353;
+  background-color: #021414;
   color: rgba(255, 255, 255);
 }
 
