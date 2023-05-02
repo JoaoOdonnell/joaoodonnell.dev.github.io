@@ -167,7 +167,7 @@ header figure img {
   background-color: #2c8080;
   margin-top: 2rem;
   transition: transform 1s;
-  padding: 5px 10px;
+  padding: 10px 20px;
 }
 
 .apresentacao button:hover {
@@ -252,11 +252,6 @@ header figure img {
 
   .apresentacao h1 {
     font-size: 2rem;
-  }
-
-  .apresentacao button {
-    width: 150px;
-    padding: 10px;
   }
 
   .apresentacao button a {
