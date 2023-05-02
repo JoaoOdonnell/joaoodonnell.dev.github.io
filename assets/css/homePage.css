@@ -264,7 +264,7 @@ header figure img {
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .middle-content-home {
     grid-template-columns: 1fr;
     margin-top: 15rem;
