@@ -139,7 +139,7 @@ header figure img {
     width: 0;
   }
   to {
-    width: 15em;
+    width: 100%;
   }
 }
 
