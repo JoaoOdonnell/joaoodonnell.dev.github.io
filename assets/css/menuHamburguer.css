@@ -1,4 +1,8 @@
 @media (max-width: 850px) {
+  #menu li a::after {
+    display: none;
+  }
+
   #menu #list-pages {
     display: block;
     position: absolute;
