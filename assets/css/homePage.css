@@ -164,15 +164,10 @@ header figure img {
   border: 0px solid;
   background-color: #2c8080;
   margin-top: 2rem;
-  transition: transform 1s;
+  transition: transform 0.3s;
   padding: 10px 20px;
-}
-
-.apresentacao button:hover {
-  transform: translateX(0) scale(1.2);
-}
-
-.apresentacao button a {
+  box-shadow: inset 3px -7px 2px rgba(0, 0, 0, 0.36);
+  filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #021414;
@@ -180,6 +175,10 @@ header figure img {
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.apresentacao button:hover {
+  transform: scale(1.1);
 }
 
 .logo-apresentacao {
@@ -226,12 +225,12 @@ header figure img {
 }
 
 .figura a {
-  transition: transform 1s;
+  transition: transform 0.3s;
 }
 
 .figura a:hover,
 .figura a:focus {
-  transform: translateX(0) scale(1.5);
+  transform: scale(1.2);
 }
 
 #btn-mobile {
