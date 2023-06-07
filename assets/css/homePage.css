@@ -201,7 +201,6 @@ header figure img {
 
 #container-home-page footer {
   display: flex;
-  flex-wrap: wrap;
   max-width: 1300px;
   gap: 5rem;
   margin: 0 auto;
@@ -256,10 +255,14 @@ header figure img {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .middle-content-home {
     grid-template-columns: 1fr;
     margin-top: 15rem;
+  }
+
+  .apresentacao h3 {
+    font-size: 0.875rem;
   }
 
   .logo-apresentacao {
@@ -268,5 +271,8 @@ header figure img {
 
   #container-home-page footer {
     gap: 3rem;
+  }
+
+  .figura {
   }
 }
