@@ -258,7 +258,7 @@ header figure img {
 @media (max-width: 600px) {
   .middle-content-home {
     grid-template-columns: 1fr;
-    margin-top: 15rem;
+    margin-top: 7rem;
   }
 
   .apresentacao h3 {
